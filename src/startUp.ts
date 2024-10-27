@@ -31,7 +31,6 @@ class StartUp {
   constructor() {
     this.serializable()
     this.deserializeUser()
-    console.log(samlStrategy)
     passport.use('samlStrategy', samlStrategy);
 
     this.app = express();
